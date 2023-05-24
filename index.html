@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock -Fidelis Stuchtey</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
-    <h1>World clock</h1>
     <div class="container">
-      <select name="" id="">
+      <h1>World clock</h1>
+
+      <select name="" id="city">
         <option value="">Select city</option>
-        <option value="london">London</option>
-        <option value="newYork">New York</option>
-        <option value="sydney">Sydney</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="munich">Munich</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/Lisbon">Munich</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>London 🇬🇧</h2>
-          <div class="date">August 15th 2022</div>
+
+      <div id="cities">
+        <div class="city" id="london">
+          <div>
+            <h2>London 🇬🇧</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Munich 🇩🇪</h2>
-          <div class="date">August 15th 2022</div>
+        <div class="city" id="munich">
+          <div>
+            <h2>Munich 🇩🇪</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
+
+    
     </div>
     <footer>
       Coded with ❤️ by Fidelis Stuchtey and is open source in
