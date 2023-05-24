@@ -1,3 +1,10 @@
-body {
-  color: blue;
+h1 {
+  text-align: center;
+}
+footer {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.container {
+  margin: 0 auto;
 }
